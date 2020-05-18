@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+.side-bar {
+  background-color: #2f4f4f;
+  width: 300px;
+  height: 100vh;
+  float: left;
+
+  .side-bar__header {
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    .side-bar__header-name {
+      font-size: 24px;
+      color: #ffffff;
+      padding-left: 10px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .side-bar__header-icon{
+      display: flex;
+    }
+      a {
+        color: white;
+        padding-right: 15px;
+    }
+  }
+
+  .side-bar__box {
+    background-color: #696969;
+    height: calc(100vh - 50px);
+
+    .side-bar__box-list {
+      font-size: 16px;
+      text-align: center;
+      padding-top: 20px;
+    }
+    .list__btn {
+      display: block;
+      height: 50px;
+      width :200px;
+      margin: 0 auto 20px;
+      border-radius: 10px;
+      font-size:20px;
+      color: black;
+      text-decoration: none;
+      text-align: center;
+      line-height: 50px;
+      &--icon {
+        padding-right: 20px;
+      }
+      &--clock {
+        background-color: #ffffff;
+        border: solid 1px black;
+      }
+      &--clipbord-list {
+        background-color: #ffffff;
+        border: solid 1px black;
+      }
+      &--envelope-open {
+        background-color: #ffffff;
+        border: solid 1px black;
+      }
+    }
+  }
+}
+
+.main-box {
+  background-color: #ffffff;
+  width: calc(100vw - 300px);
+  height: 100vh;
+  float: right;
+  &__header {
+    background-color: #ffffff;
+    height: 50px;
+    width: calc(100vw - 300px);
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+    .main-box__header-title {
+      color: black;
+      font-size: 21px;
+      font-weight: bold;
+      padding-left: 20px;
+    }
+
+    .main-box__header-btn {
+      font-size: 16px;
+      padding-right: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  &__contents {
+    background-color: #fafafa;
+    height: calc(100vh - 140px);
+    width: calc(100vw - 300px);
+    border-top: solid 1px #99ff33;
+  }
+  &__footer {
+    background-color: #d3d3d3;
+    height: 90px;
+    width: calc(100vw - 300px);
+  }
+}

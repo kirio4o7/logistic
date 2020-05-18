@@ -6,6 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
 module Logistic
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -17,5 +18,6 @@ module Logistic
       g.helper false
       g.test_framework false
     end
+    config.i18n.default_locale = :ja
   end
 end
