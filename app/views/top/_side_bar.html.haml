@@ -1,0 +1,25 @@
+.side-bar
+  .side-bar__header
+    .side-bar__header-name
+      = current_user.name
+    .side-bar__heder-icon
+      = link_to "#" do
+        = icon('fas', 'edit', class: 'icon',)
+        %span<>
+      = link_to edit_user_path(current_user) do
+        = icon('fas', 'cog', class: 'icon')
+        %span<>
+  .side-bar__box
+    .side-bar__box-list
+      = link_to "#", class: "list__btn list__btn--clock" do
+        = icon('far', 'clock', class: 'list__btn--icon',)
+        %span<>
+        勤怠管理
+      = link_to '#', class: "list__btn list__btn--clipbord-list" do
+        = icon('fas', 'clipboard-list', class: 'list__btn--icon',)
+        %span<>
+        内職指示
+      = link_to "#", class: "list__btn list__btn--envelope-open" do
+        = icon('fas', 'envelope-open', class: 'list__btn--icon')
+        %span<>
+        メッセージ
